@@ -16,8 +16,8 @@ if Destination_From_Request.status_code == 200 and Destination_To_Request.status
         form_data = {
             "from_id": From_The_Destination_Json.get("results")[0].get("id"),
             "to_id": To_The_Destination_Json.get("results")[0].get("id"),
-            "inputWeight": 4,
-            "inputPrice": 25000,
+            "inputWeight": inputWeight,
+            "inputPrice": inputPrice,
             "PayType": 1,
         }
         Response_Html = requests.post("https://payegan.ir/page/post/", data=form_data).content
