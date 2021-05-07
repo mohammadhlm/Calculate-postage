@@ -1,6 +1,5 @@
 import requests, re, bs4
 
-request_obj = requests.get("https://payegan.ir/page/post/")
 From_The_Destination = input("لطفا شهر مبدا را وارد نمایید")
 To_Destination = input("لطفا شهر مقصد را وارد نمایید")
 inputPrice = int(input("لطفا قیمت محصول را وارد نمایید"))
